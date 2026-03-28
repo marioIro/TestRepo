@@ -1,0 +1,66 @@
+$primary-color : red;
+
+nav {
+    color: $primary-color;
+}
+
+.card {
+    button {
+        color: orange;
+    };
+}
+
+@mixin button-style($color:white){
+            cursor:pointer;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            color: $color;
+}
+
+.btn-base {
+    cursor:pointer;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.btn-success {
+    @include button-style(skyblue);
+    @extend nav;
+    background-color: darkgoldenrod;
+}
+
+.btn-error {
+    @extend .btn-base;
+    background-color: thistle;
+}
+
+
+$sizes: 1,2,4,6,9;
+
+@each $it in $sizes{
+    .p-#{$it} {
+        padding: #{$it}px;
+    }
+} 
+
+@media (min-width: 768px) {
+    .btn-error {
+        background-color: papayawhip;
+    }
+}
+
+
+@media print {
+    .btn-error {
+        display: none;
+    }
+}
+
+@media (orientation: landscape){
+    .btn-error {
+        color : orangered;
+        background-color: plum;
+    }
+}

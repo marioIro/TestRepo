@@ -1,0 +1,64 @@
+nav, .btn-success {
+  color: red;
+}
+
+.card button {
+  color: orange;
+}
+
+.btn-base, .btn-error {
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+.btn-success {
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: skyblue;
+  background-color: darkgoldenrod;
+}
+
+.btn-error {
+  background-color: thistle;
+}
+
+.p-1 {
+  padding: 1px;
+}
+
+.p-2 {
+  padding: 2px;
+}
+
+.p-4 {
+  padding: 4px;
+}
+
+.p-6 {
+  padding: 6px;
+}
+
+.p-9 {
+  padding: 9px;
+}
+
+@media (min-width: 768px) {
+  .btn-error {
+    background-color: papayawhip;
+  }
+}
+@media print {
+  .btn-error {
+    display: none;
+  }
+}
+@media (orientation: landscape) {
+  .btn-error {
+    color: orangered;
+    background-color: plum;
+  }
+}/*# sourceMappingURL=style2.css.map */
