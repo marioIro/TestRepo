@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>Nav</nav>
+    <main>Main</main>
+    <section>Section</section>
+    <article>Article</article>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+    <i>Italic</i>
+    <b>Bold</b>
+    <sub>Subscript</sub>
+    <strong>Strong</strong>
+    <sup>Superscript</sup>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <form action="http://localhost:3000/echo" method="post">
+        <!-- 
+        - username        
+        - email
+        - password
+        - date nastere
+        - checkbox pentru termeni si conditii
+        - grupa
+        - numar matricol
+        -->        
+
+        <label for="username"> Username </label>
+            <input type="text" id="username" name="User" required>
+               <br/>
+            <label for="email"> Email </label>
+         
+            <input type="email" id="email" name="Email">
+               <br/>
+            <label for="parola">Parola</label>
+            <input type="password" id="password" name="Parola" minlength="4" pattern="[a-z]+">
+            <br/>
+            <label for="datanastere"> Data Nastere</label>
+            <input type="date" id="DataN" name="DataNastere" min="2025-12-15">
+   <br/>
+            <label for="T&C">Termeni si conditii </label>
+            <input type="checkbox" id="T&C" name="Termeni" checked>
+            <br/>
+            <span>Grupa</span>
+            <br/>
+            <label for="Grupa1">Grupa1: </label>
+            <input type="radio" id="Gr1" name="Grupa" value="Grupa1">
+            <br/>
+            <label for="Grupa2">Grupa2: </label>
+            <input type="radio" id="Gr2" name="Grupa" value="Grupa1">
+            <br/>
+            <label for="Grupa3">Grupa3: </label>
+            <input type="radio" id="Gr3" name="Grupa" value="Grupa1">
+            <br/>
+
+            <label for="nr">NumarMatricol</label>
+            <input type="number" id="numar" name="number" min="1">
+
+            <input type="submit" value="Inregistrare">
+
+
+    </form>
+
+</body>
+</html>
